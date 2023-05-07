@@ -1,0 +1,10 @@
+.custom-card-header {
+    background-color: #f3f3f3;
+    margin-bottom: 0px;
+    padding: 10px !important;
+    border-bottom: 1px solid #c9c9c9;
+}
+
+.custom-article {
+    border: 1px solid #c9c9c9 !important;
+}

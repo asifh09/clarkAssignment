@@ -1,0 +1,44 @@
+<template>
+    <article class="slds-card custom-article">
+        <div class="slds-card__header slds-grid custom-card-header">
+            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-media__figure">
+                    <lightning-icon icon-name="standard:bundle_config"
+                        alternative-text="Standard icon"></lightning-icon>
+                </div>
+                <div class="slds-media__body">
+                    <h2 class="slds-card__header-title">
+                        <span>Available Configs</span>
+                    </h2>
+                </div>
+                <div class="slds-no-flex">
+                    <lightning-button if:true={showTable} label="Add" slot="actions"
+                        onclick={handleAddBtn}></lightning-button>
+                </div>
+            </header>
+        </div>
+        <template if:true={showTable}>
+            <lightning-datatable key-field="Id" data={dataToShow} show-row-number-column columns={columnsList}
+                onrowselection={handleRowSelectionAction} default-sort-direction={defaultSortDirection}
+                sorted-direction={sortDirection} sorted-by={sortedBy} onsort={onHandleSort}>
+            </lightning-datatable>
+            <footer class="slds-card__footer">
+                <div class="slds-clearfix">
+                    <div class="slds-align_absolute-center">
+                        <lightning-button label="" icon-name="utility:left" onclick={previousHandler}
+                            disabled={disabledPrevious} variant="base">
+                        </lightning-button>
+                        <span class="slds-m-left_x-small"> 
+                            Showing page {getCurrentPage} from {totalPages} pages </span>
+                        <lightning-button label="" icon-name="utility:right" class="slds-m-left_x-small"
+                            onclick={nextHandler} disabled={disabledNext} variant="base">
+                        </lightning-button>
+                    </div>
+                </div>
+            </footer>
+        </template>
+        <template if:false={showTable}>
+            <h1>{labels.NoRecords}</h1>
+        </template>
+    </article>
+</template>

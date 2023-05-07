@@ -1,0 +1,36 @@
+<template>
+    <article class="slds-card custom-article">
+        <div class="slds-card__header slds-grid custom-card-header">
+            <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                <div class="slds-media__figure">
+                    <lightning-icon icon-name="custom:custom12" alternative-text="Doc image"></lightning-icon>
+                </div>
+                <div class="slds-media__body">
+                    <h2 class="slds-card__header-title">
+                        <span>Case Configs</span>
+                    </h2>
+                </div>
+                <div class="slds-no-flex">
+                    <lightning-button if:true={showTable} label="Send" slot="actions"
+                        onclick={handleSendBtn}></lightning-button>
+                </div>
+            </header>
+        </div>
+        <template if:true={showTable}>
+            <lightning-datatable key-field="Id" data={dataList} columns={columnsList} hide-checkbox-column
+                show-row-number-column
+                default-sort-direction={defaultSortDirection}
+                sorted-direction={sortDirection}
+                sorted-by={sortedBy}
+                onsort={onHandleSort}>
+            </lightning-datatable>
+
+            <footer class="slds-card__footer">
+
+            </footer>
+        </template>
+        <template if:false={showTable}>
+            <h1>{labels.NoRecords}</h1>
+        </template>
+    </article>
+</template>

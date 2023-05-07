@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>ccAllDuplicate</fullName>
+        <categories>Case Config</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ccAllDuplicate</shortDescription>
+        <value>Duplicate records Please select different records to add.</value>
+    </labels>
+    <labels>
+        <fullName>ccCaseClosedConfig</fullName>
+        <categories>Case Config</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ccCaseClosedConfig</shortDescription>
+        <value>The case is closed; you cannot add more case config records.</value>
+    </labels>
+    <labels>
+        <fullName>ccCaseClosedRequestSent</fullName>
+        <categories>Case Config</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ccCaseClosedRequestSent</shortDescription>
+        <value>The case is already closed; you cannot send a request again.</value>
+    </labels>
+    <labels>
+        <fullName>ccNoRecords</fullName>
+        <categories>Case Config</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ccNoRecords</shortDescription>
+        <value>No records found</value>
+    </labels>
+    <labels>
+        <fullName>ccRecordsInserted</fullName>
+        <categories>Case Config</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ccRecordsInserted</shortDescription>
+        <value>Records have been inserted successfully.</value>
+    </labels>
+    <labels>
+        <fullName>ccRequestSentSuccess</fullName>
+        <categories>Case Config</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ccRequestSentSuccess</shortDescription>
+        <value>Request sent successfully; now the case is closed.</value>
+    </labels>
+    <labels>
+        <fullName>ccSelectRow</fullName>
+        <categories>Case Config</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ccSelectRow</shortDescription>
+        <value>Please select a row</value>
+    </labels>
+    <labels>
+        <fullName>ccSomeDuplicate</fullName>
+        <categories>Case Config</categories>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>ccSomeDuplicate</shortDescription>
+        <value>Some records are duplicates; the rest of the record was inserted successfully.</value>
+    </labels>
+</CustomLabels>
