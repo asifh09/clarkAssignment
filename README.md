@@ -1,4 +1,4 @@
-## All Config and Case Config [![LWC](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)]
+## All Config and Case Config
 As per the requirements we need to create two related list which will use at case detail page.
 
 ## Requirement
