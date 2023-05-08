@@ -12,6 +12,7 @@ As per the requirement, I break these down into two LWC individual components so
 2. Second for "Case Configs".  Component name is caseConfigRelatedList
 3. LMS to communicate between these component. LMS name is  NotificationMessageChannel
 4. Apex class controlle. Name is ConfigController.
+5. Used namedCredentials to whitelist the URL and use dynamically in apex for http callout  
 
 ## Instruction
 This repository includes all the relevant metadata and components, like LWC, Apex classes, and case flexi pages. You can deploy the repository in your Salesforce org by cloning it in Visual Studio code. Once it has been properly deployed, you can run the components to verify their functionality. 
@@ -51,4 +52,5 @@ This repository includes all the relevant metadata and components, like LWC, Ape
     - ccRequestSentSuccess
     - ccSelectRow
     - ccSomeDuplicate
-
+- NamedCredentials
+    - requestCatcherEndPoint.namedCredential
